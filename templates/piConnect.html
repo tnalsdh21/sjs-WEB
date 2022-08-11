@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>🪴식집사</title>
+		<link rel="stylesheet" href="/static/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="center">
+			<div id="loadingBox">로딩중입니다</div>
+			<div class="buttonLine">
+				<button class="homeBtn">홈</button>
+				<button id="testStartBtn">테스트 시작하기</button>
+			</div>
+		</div>
+
+		<script>
+			//signal = raspberrypi signal
+			if (signal == "OK") {
+				window.onload = function () {
+					var loadingBox = document.getElementById("loadingBox");
+					loadingBox.textContent = "로딩이 완료되었습니다";
+				};
+			}
+		</script>
+	</body>
+</html>
